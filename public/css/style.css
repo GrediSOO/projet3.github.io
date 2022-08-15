@@ -1,3 +1,19 @@
+* {
+  box-sizing: border-box;
+}
 
+@font-face {
+  font-family: "Shrikhand";
+  src: url(public/css/fonts/Shrikhand-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(public/css/fonts/Roboto-Regular.ttf) format("ttf");
+}
+.logo img {
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */
