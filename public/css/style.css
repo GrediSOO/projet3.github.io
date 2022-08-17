@@ -10,10 +10,6 @@
   font-family: "Roboto";
   src: url(public/css/fonts/Roboto-Regular.ttf) format("ttf");
 }
-.logo img {
-  object-fit: contain;
-  display: flex;
-  justify-content: center;
-}
+/*header accueil*/
 
 /*# sourceMappingURL=style.css.map */

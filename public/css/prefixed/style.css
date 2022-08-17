@@ -1,3 +1,16 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+@font-face {
+  font-family: "Shrikhand";
+  src: url(public/css/fonts/Shrikhand-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(public/css/fonts/Roboto-Regular.ttf) format("ttf");
+}
+/*header accueil*/
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvYmFzZS9fYmFzZS5zY3NzIiwiLi4vc3R5bGUuY3NzIiwiLi4vLi4vLi4vc2Fzcy9sYXlvdXQvX2hlYWRlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksOEJBQUE7VUFBQSxzQkFBQTtBQ0NKOztBRENBO0VBQ0ksd0JBQUE7RUFDQSw4REFBQTtBQ0VKO0FEQUE7RUFDSSxxQkFBQTtFQUNBLDJEQUFBO0FDRUo7QUNYQSxpQkFBQSIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
