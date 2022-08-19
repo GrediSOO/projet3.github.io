@@ -1,0 +1,27 @@
+/*footer*/
+footer {
+    background-color: rgba(0, 0, 0, 0.788);
+    h2 {
+        font-family: $font-tittle;
+        font-size: large;
+        padding: 2%;
+        color: $footer-text;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    &_contents--list {
+        display: flex;
+    }
+    a {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: $footer-text;
+    }
+    &_contents--icon i {
+        margin-right: 2%;
+    }
+}

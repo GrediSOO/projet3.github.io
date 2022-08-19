@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
 }
 
 @font-face {
@@ -11,5 +12,120 @@
   src: url(public/css/fonts/Roboto-Regular.ttf) format("ttf");
 }
 /*header accueil*/
+.logo {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px #f2f2f2;
+  box-shadow: 0 0 0 1.5px #524d4d;
+}
+.logo h1 {
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: 500;
+  margin-bottom: 1.5%;
+}
+
+/*footer*/
+footer {
+  background-color: rgba(0, 0, 0, 0.788);
+}
+footer h2 {
+  font-family: "Shrikhand", "sans-serif";
+  font-size: large;
+  padding: 2%;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+footer_contents--list {
+  display: flex;
+}
+footer a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+}
+footer_contents--icon i {
+  margin-right: 2%;
+}
+
+/*main accueil*/
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: rgba(216, 213, 213, 0.5882352941);
+  border-bottom: solid 2px #f2f2f2;
+}
+.location_icon {
+  margin-right: 2.5%;
+}
+.location_text {
+  font-weight: 700;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.description_tittle {
+  font-weight: bold;
+  text-align: center;
+}
+.description_subtittle {
+  text-align: center;
+}
+.description_button {
+  border-radius: 20px;
+  background-color: #FF79DA;
+  color: #fff;
+  font-weight: 800;
+}
+
+.function {
+  display: flex;
+  flex-flow: column;
+}
+.function h2 {
+  font-weight: 900;
+  padding-left: 2%;
+}
+.function_contents {
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.restaurant h2 {
+  padding-left: 2%;
+}
+.restaurant_card {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  width: 50%;
+  border-radius: 15px;
+  background-color: rgb(252, 249, 249);
+  margin: 2%;
+}
+.restaurant img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
 
 /*# sourceMappingURL=style.css.map */
