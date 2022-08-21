@@ -1,0 +1,124 @@
+/*main accueil*/
+
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em;
+    background-color: #f3f3f3;
+
+    &_icon {
+        margin-right: 2.5%;
+    }
+    &_text {
+        font-weight: 700;
+        margin-left: 2.5%;
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 2em 1em 4em 1em;
+
+    &_tittle {
+        text-align: center;
+        margin: 0;
+        font-weight: 900;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    &_subtittle {
+        text-align: center;
+        padding: 0.5em 1em 1.8em 1em;
+        font-weight: 400;
+    }
+    &_button {
+        @include home_button;
+    }
+}
+
+.function {
+    display: flex;
+    flex-flow: column;
+    padding: 0.8em 0.8em 0.8em 0.1em;
+
+    h2 {
+        font-weight: 900;
+        padding: 1.5em 0.8em 0.6em 0.5em;
+        margin: 0;
+    }
+    &_contents {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 0.80em;
+        font-weight: bold;
+        background-color: #f6f6f6;
+        padding: 0.8em;
+        margin: 0.6em 0.6em 0.6em 1em;
+        width: 21em;
+        height: 4.6em;
+        box-shadow: 0em 0.5em 0.5em 0em #d1d0d0;
+    }
+    &_list {
+        list-style: none;
+        counter-reset: compteListe;
+        margin: 0;
+        padding: 0.5em;
+    }
+    &_contents--icon {
+        margin-right: 1.5em;
+        color: grey;
+        display: flex;
+        align-items: center;
+    }
+    &_contents--icon::before {
+        counter-increment: compteListe 1;
+        content: counter(compteListe) " ";
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: -1.4em;
+        border-radius: 100px;
+        background-color: $primary;
+        width: 1.5em;
+        height: 1.5em;
+        color: $white-text;
+        font-weight: 400;
+    }
+}
+
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 0.5em;
+
+    h2 {
+        padding: 1.5em 0.5em 0.5em 0.5em;
+        margin: 0;
+    }
+    &_card {
+        display: flex;
+        justify-content: center;
+        height: 40%;
+        width: 50%;
+        border-radius: 15px;
+        background-color: rgb(252, 249, 249);
+        margin: 2%;
+    }
+    &_card a {
+        text-decoration: none;
+        display: block;
+    }
+    img {
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+}

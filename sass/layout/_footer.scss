@@ -5,7 +5,7 @@ footer {
         font-family: $font-tittle;
         font-size: large;
         padding: 2%;
-        color: $footer-text;
+        color: $white-text;
     }
     ul {
         list-style: none;
@@ -19,7 +19,7 @@ footer {
         display: flex;
         flex-direction: row;
         text-decoration: none;
-        color: $footer-text;
+        color: $white-text;
     }
     &_contents--icon i {
         margin-right: 2%;

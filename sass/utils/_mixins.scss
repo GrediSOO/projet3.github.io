@@ -1,6 +1,10 @@
-@mixin button {
-    border-radius: 20px;
-    background-color: $secondary;
-    color: #fff;
-    font-weight: 800;
+@mixin home_button {
+    border-radius: 100px;
+    color: $white-text;
+    font-weight: 700;
+    width: 15em;
+    height: 2.8em;
+    border: 0;
+    background-image: linear-gradient(0deg,$primary,$secondary);
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
 }
