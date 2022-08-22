@@ -50,6 +50,15 @@
         padding: 1.5em 0.8em 0.6em 0.5em;
         margin: 0;
     }
+    &_list {
+        list-style: none;
+        counter-reset: compteListe;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0.5em;
+    }
     &_contents {
         display: flex;
         flex-direction: row;
@@ -58,16 +67,10 @@
         font-weight: bold;
         background-color: #f6f6f6;
         padding: 0.8em;
-        margin: 0.6em 0.6em 0.6em 1em;
-        width: 21em;
+        margin: 0.6em 0em 0.6em 0.6em;
+        width: 97%;
         height: 4.6em;
         box-shadow: 0em 0.5em 0.5em 0em #d1d0d0;
-    }
-    &_list {
-        list-style: none;
-        counter-reset: compteListe;
-        margin: 0;
-        padding: 0.5em;
     }
     &_contents--icon {
         margin-right: 1.5em;
@@ -102,23 +105,51 @@
         padding: 1.5em 0.5em 0.5em 0.5em;
         margin: 0;
     }
+    &_container {
+        padding: 0.5em;
+    }
     &_card {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        height: 40%;
-        width: 50%;
+        width: 100%;
         border-radius: 15px;
-        background-color: rgb(252, 249, 249);
-        margin: 2%;
-    }
-    &_card a {
+        background-color: #ffff;
+        margin-bottom: 1.2em;
         text-decoration: none;
-        display: block;
+        color: #000;
     }
     img {
-        height: 50%;
         width: 100%;
         object-fit: cover;
-        border-radius: 15px 15px 0 0;
+        border-radius: 25px 25px 0 0;
+    }
+    &_contents {
+        display: flex;
+        flex-direction: column;
+        padding: 0.8em;
+    }
+    h3 {
+        margin: 0;
+        padding-bottom: 0.3em;
+        font-weight: 800;
+    }
+    &_favicon {
+        position: absolute;
+        left: 21em;
+    }
+    &_location {
+        font-weight: 400;
+        font-size: large;
+    }
+    &_banner {
+        font-weight: 700;
+        color: #4b8879;
+        background-color: #99e2d0;
+        padding: 0.5em 1em 0.5em 1em;
+        z-index: 1;
+        width: fit-content;
+        position: absolute;
+        left: 17em;
     }
 }

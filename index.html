@@ -24,77 +24,81 @@
         </header>
         <main>
             <!--location-->
-            <div class="location">
+            <section class="location">
                 <div class="location_icon"><i class="fa-solid fa-location-dot"></i></div>
                 <div class="location_text">Paris, Belleville</div>
-            </div>
+            </section>
             <!--description-->
-            <div class="description">
+            <section class="description">
                 <h2 class="description_tittle">Réservez le menu qui vous convient</h2>
                 <div class="description_subtittle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</div>
                 <button class="description_button">Explorer nos restaurants</button>
-            </div>
+            </section>
             <!--functions-->
-            <div class="function">
+            <section class="function">
                 <h2 class="function_tittle">Fonctionnement</h2>
                 <ol class="function_list">
                     <li class="function_contents"><div class="function_contents--icon"><i class="fa-solid fa-mobile-screen-button"></i></div><span class="function_contents--text">Choisissez un restaurant</span></li>
                     <li class="function_contents"><div class="function_contents--icon"><i class="fa-solid fa-list-ul"></i></div><span class="function_contents--text">Composez votre menu</span></li>
                     <li class="function_contents"><div class="function_contents--icon"><i class="fa-solid fa-store"></i></div><span class="function_contents--text">Dégustez au restaurant</span></li>
                 </ol>
-            </div>
+            </section>
             <!--restaurant-->
-            <div class="restaurant">
+            <section class="restaurant">
                 <h2 class="restaurant_tittle">Restaurants</h2>
-                <!--restaurant 1-->
-                <div class="restaurant_card">
-                    <a href="la_palette_du_goût.html">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" title="La palette du goût"/>
-                    <div class="restaurant_name">La palette du goût</div>
-                    <div class="restaurant_favicon"><i class="fa-thin fa-heart"></i></div>
-                    <div class="restaurant_location">Ménilmontant</div>
-                    <div class="restaurant_banner">Nouveau</div>
+                <div class="restaurant_container">
+                    <!--restaurant 1-->
+                    <a class="restaurant_card" href="la_palette_du_goût.html">
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût" title="La palette du goût"/>
+                        <div class="restaurant_contents">
+                            <h3 class="restaurant_name">La palette du goût</h3>
+                            <div class="restaurant_favicon"><i class="fa-regular fa-heart"></i></div>
+                            <div class="restaurant_location">Ménilmontant</div>
+                            <div class="restaurant_banner">Nouveau</div>
+                        </div>
+                    </a>
+                    <!--restaurant 2-->
+                    <a class="restaurant_card" href="la_note_enchante.html">
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la note enchanté" title="La note enchanté"/>
+                        <div class="restaurant_contents">
+                            <h3 class="restaurant_name">La note enchanté</h3>
+                            <div class="restaurant_favicon"><i class="fa-regular fa-heart"></i></div>
+                            <div class="restaurant_location">Charonne</div>
+                            <div class="restaurant_banner">Nouveau</div>
+                        </div>
+                    </a>
+                    <!--restaurant 3-->
+                    <a class="restaurant_card" href="a_la_francaise.html">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" title="À la française"/>
+                        <div class="restaurant_contents">
+                            <h3 class="restaurant_name">À la française</h3>
+                            <div class="restaurant_favicon"><i class="fa-regular fa-heart"></i></div>
+                            <div class="restaurant_location">Cité Rouge</div>
+                        </div>
+                    </a>
+                    <!--restaurant 4-->
+                    <a class="restaurant_card" href="le_delice_des_sens.html">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" title="Le délice des sens"/>
+                        <div class="restaurant_contents">
+                            <h3 class="restaurant_name">Le délice des sens</h3>
+                            <div class="restaurant_favicon"><i class="fa-regular fa-heart"></i></div>
+                            <div class="restaurant_location">Folie-Méricourt</div>
+                        </div>
                     </a>
                 </div>
-                <!--restaurant 2-->
-                <div class="restaurant_card">
-                    <a href="la_note_enchante.html">
-                    <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la note enchanté" title="La note enchanté"/>
-                    <div class="restaurant_name">La note enchanté</div>
-                    <div class="restaurant_favicon"><i class="fa-thin fa-heart"></i></div>
-                    <div class="restaurant_location">Charonne</div>
-                    <div class="restaurant_banner">Nouveau</div>
-                    </a>
-                </div>
-                <!--restaurant 3-->
-                <div class="restaurant_card">
-                    <a href="a_la_francaise.html">
-                    <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" title="À la française"/>
-                    <div class="restaurant_name">À la française</div>
-                    <div class="restaurant_favicon"><i class="fa-thin fa-heart"></i></div>
-                    <div class="restaurant_location">Cité Rouge</div>
-                    </a>
-                </div>
-                <!--restaurant 4-->
-                <div class="restaurant_card">
-                    <a href="le_delice_des_sens.html">
-                    <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" title="Le délice des sens"/>
-                    <div class="restaurant_name">Le délice des sens</div>
-                    <div class="restaurant_favicon"><i class="fa-thin fa-heart"></i></div>
-                    <div class="restaurant_location">Folie-Méricourt</div>
-                    </a>
-                </div>
-            </div>
+            </section>
         </main>
         <footer>
             <!--footer-->
-            <h2>ohmyfood</h2>
-            <ul class="footer_contents">
-                <li class="footer_contents--list"><a href="#"><div class="footer_contents--icon"><i class="fa-solid fa-utensils"></i></div>Proposer un restaurant</a></li>
-                <li class="footer_contents--list"><a href="#"><div class="footer_contents--icon"><i class="fa-solid fa-handshake-angle"></i></div>Devenir partenaire</a></li>
-                <li class="footer_contents--list"><a href="#">Mentions légales</a></li>
-                <li class="footer_contents--list"><a href="mailto:pauvert.vincent@gmail.com">Contact</a></li>
-            </ul>
+            <section class="footer">
+                <h2 class="footer_tittle">ohmyfood</h2>
+                <ul class="footer_contents">
+                    <li class="footer_contents--list"><a href="#"><div class="footer_contents--icon"><i class="fa-solid fa-utensils"></i></div><span class="footer_contents--text">Proposer un restaurant</span></a></li>
+                    <li class="footer_contents--list"><a href="#"><div class="footer_contents--icon"><i class="fa-solid fa-handshake-angle"></i></div><span class="footer_contents--text">Devenir partenaire</span></a></li>
+                    <li class="footer_contents--list"><a href="#"><span class="footer_contents--text">Mentions légales</span></a></li>
+                    <li class="footer_contents--list"><a href="mailto:pauvert.vincent@gmail.com"><span class="footer_contents--text">Contact</span></a></li>
+                </ul>
+            </section>
         </footer>
     </body>
 </html>

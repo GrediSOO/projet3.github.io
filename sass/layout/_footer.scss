@@ -1,27 +1,33 @@
 /*footer*/
-footer {
+.footer {
     background-color: rgba(0, 0, 0, 0.788);
-    h2 {
+    height: 100%;
+    &_tittle {
         font-family: $font-tittle;
+        font-weight: 100;
         font-size: large;
-        padding: 2%;
+        margin: 0;
+        padding: 1em;
         color: $white-text;
     }
-    ul {
+    &_contents {
         list-style: none;
+        margin: 0;
+        padding: 1em;
         display: flex;
         flex-direction: column;
     }
     &_contents--list {
         display: flex;
     }
+    &_contents--icon {
+        padding-right: 1em;
+    }
     a {
         display: flex;
         flex-direction: row;
         text-decoration: none;
+        padding: 0em 0.5em 0.5em 0.5em;
         color: $white-text;
-    }
-    &_contents--icon i {
-        margin-right: 2%;
     }
 }
