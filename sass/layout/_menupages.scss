@@ -11,17 +11,29 @@
     z-index: 1;
     border-radius: 2em 2em 0em 0em;
     margin-top: -4em;
-    background-color: #f6f6f6;
+    background-color: #ece9e9;
     position: relative;
-
     &_tittle {
-        padding: 1em 0.5em 1em 0.5em;
+        padding: 1em 0.5em 0.5em 0.5em;
         margin: 0;
         font-family: $font-tittle;
         font-weight: 500;
     }
-    &_tiitle--icon {
+    &_heart {
+        font-size: xx-large;
         position: absolute;
-        left: 21em;
+        right: 0.8em;
+        top: 1em;
     }
+}
+
+.entries, .dishes, .desserts {
+    @include menu_containers;
+}
+.menu_contents{
+    @include menu_contents;
+}
+
+.command_button {
+    @include button;
 }

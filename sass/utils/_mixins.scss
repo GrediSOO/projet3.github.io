@@ -1,10 +1,52 @@
-@mixin home_button {
+@mixin button {
     border-radius: 100px;
-    color: $white-text;
+    color: $white;
     font-weight: 700;
     width: 15em;
     height: 2.8em;
     border: 0;
     background-image: linear-gradient(0deg,$primary,$secondary);
     box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+}
+
+@mixin menu_containers {
+    padding: 0.8em;
+    h2 {
+        font-size: large;
+        font-weight: 400;
+        border-bottom: 3px solid $tertiary;
+        width: 11%;
+    }
+}
+
+@mixin menu_contents {
+    border-radius: 15px;
+    position: relative;
+    width: 100%;
+    background-color: $white;
+    padding: 0.5em;
+    margin: 1em 0 0 0;
+    box-shadow: 1px 5px 15px rgb(207, 206, 206);
+    .menu_contents {
+        &--tittle {
+            font-size: 1.29em;
+            font-weight: 900;
+            padding: 0.2em;
+        }
+        &--subtittle {
+            font-size: 1em;
+            font-weight: 400;
+            padding: 0.3em;
+            max-width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            hyphens: auto;
+        }
+        &--price {
+            position: absolute;
+            right: 1.2em;
+            top: 3em;
+            font-weight: 800;
+        }
+    }
 }
