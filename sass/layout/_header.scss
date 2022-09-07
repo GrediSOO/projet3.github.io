@@ -16,6 +16,9 @@ header {
         font-size: x-large;
         left: 0.5em;
         top: 0.6em;
+        & a {
+            color: black;
+        }
     }
     
 }

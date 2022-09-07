@@ -30,10 +30,15 @@
 .entries, .dishes, .desserts {
     @include menu_containers;
 }
-.menu_contents{
+.menu_contents {
     @include menu_contents;
 }
-
-.command_button {
-    @include button;
+.command {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5em 2.5em 4em 2.5em;
+    &_button {
+        @include button;
+    }
 }

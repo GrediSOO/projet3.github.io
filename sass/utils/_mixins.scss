@@ -15,38 +15,39 @@
         font-size: large;
         font-weight: 400;
         border-bottom: 3px solid $tertiary;
-        width: 11%;
+        width: 2em;
     }
 }
 
 @mixin menu_contents {
     border-radius: 15px;
-    position: relative;
     width: 100%;
     background-color: $white;
     padding: 0.5em;
     margin: 1em 0 0 0;
     box-shadow: 1px 5px 15px rgb(207, 206, 206);
-    .menu_contents {
-        &--tittle {
-            font-size: 1.29em;
-            font-weight: 900;
-            padding: 0.2em;
-        }
-        &--subtittle {
-            font-size: 1em;
-            font-weight: 400;
-            padding: 0.3em;
-            max-width: 90%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            hyphens: auto;
-        }
-        &--price {
-            position: absolute;
-            right: 1.2em;
-            top: 3em;
-            font-weight: 800;
-        }
+    &--tittle {
+        font-size: 1.29em;
+        font-weight: 900;
+        padding: 0.2em;
+    }
+    &--description {
+        display: flex;
+        justify-content: space-between;
+        white-space: nowrap;
+    }
+    &--subtittle {
+        font-size: 1em;
+        font-weight: 500;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 0;
+    }
+    &--price {
+        font-weight: 800;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 0;
     }
 }
