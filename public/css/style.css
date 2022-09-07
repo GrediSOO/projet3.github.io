@@ -262,7 +262,7 @@ header {
   box-shadow: 1px 5px 15px rgb(207, 206, 206);
 }
 .menu_contents--tittle {
-  font-size: 1.29em;
+  font-size: 1.25em;
   font-weight: 900;
   padding: 0.2em;
 }
@@ -278,6 +278,7 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
+  padding: 0.2em;
 }
 .menu_contents--price {
   font-weight: 800;
