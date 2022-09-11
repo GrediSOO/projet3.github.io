@@ -72,10 +72,9 @@
         width: 97%;
         height: 4.6em;
         box-shadow: 0em 0.5em 0.5em 0em #d1d0d0;
-        cursor: pointer;
         &:hover {
             background-color: lighten($color: #f6f6f6, $amount: 2.5);
-            box-shadow: 0em 0.5em 0.5em 0em #a1a1a1;;
+            box-shadow: 0em 0.5em 0.5em 0em #a1a1a1;
         }
     }
     &_contents--icon {
