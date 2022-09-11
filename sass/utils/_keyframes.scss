@@ -37,3 +37,15 @@
         rotate: 360deg;
     }    
 }
+
+@keyframes pull_right {
+    0% {
+        padding-right: 0;
+    }
+    50% {
+        padding-right: 50px;
+    }
+    100% {
+        padding-right: 1em;
+    }
+}

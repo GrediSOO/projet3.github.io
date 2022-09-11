@@ -26,10 +26,15 @@
     padding: 0.5em;
     margin: 1em 0 0 0;
     box-shadow: 1px 5px 15px rgb(207, 206, 206);
+    position: relative;
     &--tittle {
-        font-size: 1.25em;
+        font-size: 1.1em;
         font-weight: 900;
         padding: 0.2em;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     &--description {
         display: flex;
@@ -50,5 +55,32 @@
         padding-left: 1em;
         padding-right: 1em;
         margin: 0;
+    }
+    &:hover {
+        animation: pull_right 3s ease-in-out;
+    }
+    &:hover .check {
+        opacity: 1;
+    }
+}
+
+@mixin check_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $tertiary;
+    width: 56px;
+    height: 68.2px;
+    padding: 20px;
+    position: absolute;
+    top: 0.04px;
+    left: 1em;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 0;
+    transition: transform 330ms ease-in-out;
+    & i {
+        color: $white;
+        transition: transform 500ms ease-in-out;
     }
 }

@@ -7,8 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    z-index: 999999;
+    position: sticky;
     animation: loader 1s ease-in-out 3s forwards;
     &_text {
         padding: 0.5em;

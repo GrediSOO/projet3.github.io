@@ -41,6 +41,9 @@
 .menu_contents {
     @include menu_contents;
 }
+.check {
+    @include check_circle;
+}
 .command {
     display: flex;
     justify-content: center;
