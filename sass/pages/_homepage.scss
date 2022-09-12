@@ -4,15 +4,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
     padding: 1em;
     background-color: #f3f3f3;
-
-    &_icon {
-        margin-right: 2.5%;
-    }
     &_text {
         font-weight: 700;
-        margin-left: 2.5%;
+        padding-left: 1.5em;
     }
 }
 
@@ -50,6 +47,9 @@
         font-size: x-large;
         padding: 1.5em 0.8em 0.6em 0.5em;
         margin: 0;
+        @include desktop {
+            text-align: center;
+        }
     }
     &_list {
         list-style: none;
@@ -59,6 +59,10 @@
         flex-direction: column;
         margin: 0;
         padding: 0.5em;
+        @include desktop {
+            flex-direction: row;
+            ;
+        }
     }
     &_contents {
         display: flex;
@@ -75,6 +79,12 @@
         &:hover {
             background-color: lighten($color: #f6f6f6, $amount: 2.5);
             box-shadow: 0em 0.5em 0.5em 0em #a1a1a1;
+        }
+        @include tablet {
+            justify-content: center;
+        }
+        @include desktop {
+            margin: 1em;
         }
     }
     &_contents--icon {
@@ -112,9 +122,16 @@
         margin: 0;
         font-weight: 800;
         font-size: x-large;
+        @include desktop {
+            text-align: center;
+        }
     }
     &_container {
         padding: 0.9em;
+        @include desktop {
+            column-count: 2;
+            width: 100%;
+        }
     }
     &_card {
         display: flex;

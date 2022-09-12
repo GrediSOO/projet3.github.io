@@ -17,6 +17,9 @@
         margin: 0;
         font-family: $font-tittle;
         font-weight: 500;
+        @include desktop {
+            text-align: center;
+        }
     }
     &_heart {
         font-size: xx-large;
@@ -25,7 +28,14 @@
         top: 1em;
     }
 }
-
+.food_card {
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        padding: 1em;
+        justify-content: center
+    }
+}
 .entries {
     @include menu_containers;
     animation: openning 1s ease-in-out;
@@ -41,8 +51,9 @@
 .menu_contents {
     @include menu_contents;
 }
-.check {
-    @include check_circle;
+.menu_contents::after {
+    content: "";
+    animation: rotate 2s ease-in-out;
 }
 .command {
     display: flex;
