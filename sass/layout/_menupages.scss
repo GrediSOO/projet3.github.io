@@ -51,9 +51,8 @@
 .menu_contents {
     @include menu_contents;
 }
-.menu_contents::after {
-    content: "";
-    animation: rotate 2s ease-in-out;
+.check {
+    @include check_circle;
 }
 .command {
     display: flex;
