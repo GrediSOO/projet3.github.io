@@ -16,7 +16,7 @@
     }
     100% {
         opacity: 0;
-        z-index: 0;
+        z-index: -1000;
     }
 }
 
@@ -41,12 +41,9 @@
 
 @keyframes pull_right {
     0% {
-        padding-right: 0;
-    }
-    50% {
-        padding-right: 50px;
+        width: 100%;
     }
     100% {
-        padding-right: 0;
+        width: 80%;
     }
 }
