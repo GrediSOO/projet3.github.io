@@ -44,10 +44,12 @@
     }
 }
 .menu_container {
-    display: flex;
     position: relative;
     .check {
         @include check_circle;
+    }
+    &:hover {
+        transition: all transform translate(0)
     }
 }
 .entries {

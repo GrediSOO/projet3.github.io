@@ -95,9 +95,6 @@
         padding-right: 1em;
         margin: 0;
     }
-    &:hover {
-        animation: pull_right 1s ease-in-out forwards;
-    }
     &:hover  .check i {
         animation: rotate 1s ease-in-out 1s;
     }
@@ -108,18 +105,19 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 25.5%;
-    height: 81%;
+    width: 60px;
     padding: 20px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     opacity: 1;
     position: absolute;
-    top: 1em;
-    right: 0.01em;
-    z-index: -1;
+    top: 0;
+    right: 0;
     & i {
         color: $white;
+    }
+    &:hover {
+        animation: pull_left 1s ease-in-out 1s;
     }
     @include tablet {
         height: 74%;

@@ -34,12 +34,15 @@
     rotate: 360deg;
   }
 }
-@keyframes pull_right {
+@keyframes pull_left {
   0% {
-    width: 100%;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(60px);
   }
   100% {
-    width: 86%;
+    transform: translateX(0px);
   }
 }
 * {
@@ -134,6 +137,11 @@ header {
 }
 .logo_return a {
   color: black;
+}
+@media screen and (min-width: 768px) {
+  .logo_return_return i {
+    top: 10em;
+  }
 }
 
 /*main accueil*/
@@ -327,7 +335,7 @@ header {
   width: 24px;
   height: 24px;
   position: absolute;
-  right: 1em;
+  right: 2em;
   z-index: 10;
   cursor: pointer;
 }
@@ -442,7 +450,6 @@ header {
 }
 
 .menu_container {
-  display: flex;
   position: relative;
 }
 .menu_container .check {
@@ -450,19 +457,20 @@ header {
   display: flex;
   justify-content: end;
   align-items: center;
-  width: 25.5%;
-  height: 81%;
+  width: 60px;
   padding: 20px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   opacity: 1;
   position: absolute;
-  top: 1em;
-  right: 0.01em;
-  z-index: -1;
+  top: 0;
+  right: 0;
 }
 .menu_container .check i {
   color: white;
+}
+.menu_container .check:hover {
+  animation: pull_left 1s ease-in-out 1s;
 }
 @media screen and (min-width: 768px) {
   .menu_container .check {
@@ -473,6 +481,9 @@ header {
   .menu_container .check {
     height: 82%;
   }
+}
+.menu_container:hover {
+  transition: all transform translate(0);
 }
 
 .entries {
@@ -561,9 +572,6 @@ header {
   padding-left: 1em;
   padding-right: 1em;
   margin: 0;
-}
-.menu_contents:hover {
-  animation: pull_right 1s ease-in-out forwards;
 }
 .menu_contents:hover .check i {
   animation: rotate 1s ease-in-out 1s;
