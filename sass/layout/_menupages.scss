@@ -24,8 +24,15 @@
     &_heart {
         font-size: xx-large;
         position: absolute;
-        right: 0.8em;
+        right: 1.2em;
         top: 1em;
+        @include heart_animation;
+        @include tablet {
+            right: 2em;
+        }
+        @include desktop {
+            right: 5em;
+        }
     }
 }
 .food_card {
@@ -34,6 +41,13 @@
         flex-direction: row;
         padding: 1em;
         justify-content: center
+    }
+}
+.menu_container {
+    display: flex;
+    position: relative;
+    .check {
+        @include check_circle;
     }
 }
 .entries {
@@ -50,9 +64,6 @@
 }
 .menu_contents {
     @include menu_contents;
-}
-.check {
-    @include check_circle;
 }
 .command {
     display: flex;

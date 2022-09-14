@@ -39,7 +39,7 @@
     width: 100%;
   }
   100% {
-    width: 80%;
+    width: 86%;
   }
 }
 * {
@@ -332,11 +332,11 @@ header {
   cursor: pointer;
 }
 .restaurant_favicon > .fa-regular.fa-heart {
-  font-size: x-large;
+  font-size: xx-large;
   opacity: 1;
 }
 .restaurant_favicon > .fa-solid.fa-heart {
-  font-size: x-large;
+  font-size: xx-large;
   color: pink;
   transition: 0.5s;
   background: -webkit-linear-gradient(0deg, #FF79DA, #9356DC);
@@ -344,10 +344,10 @@ header {
   -webkit-text-fill-color: transparent;
   opacity: 0;
 }
-.restaurant_favicon:focus > .fa-solid.fa-heart {
+.restaurant_favicon:hover > .fa-solid.fa-heart {
   opacity: 1;
 }
-.restaurant_favicon:focus > .fa-regular.fa-heart {
+.restaurant_favicon:hover > .fa-regular.fa-heart {
   opacity: 0;
 }
 .restaurant_favicon i {
@@ -396,8 +396,40 @@ header {
 .card_heart {
   font-size: xx-large;
   position: absolute;
-  right: 0.8em;
+  right: 1.2em;
   top: 1em;
+}
+.card_heart > .fa-regular.fa-heart {
+  font-size: xx-large;
+  opacity: 1;
+}
+.card_heart > .fa-solid.fa-heart {
+  font-size: xx-large;
+  color: pink;
+  transition: 0.5s;
+  background: -webkit-linear-gradient(0deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.card_heart:hover > .fa-solid.fa-heart {
+  opacity: 1;
+}
+.card_heart:hover > .fa-regular.fa-heart {
+  opacity: 0;
+}
+.card_heart i {
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .card_heart {
+    right: 2em;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card_heart {
+    right: 5em;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -406,6 +438,40 @@ header {
     flex-direction: row;
     padding: 1em;
     justify-content: center;
+  }
+}
+
+.menu_container {
+  display: flex;
+  position: relative;
+}
+.menu_container .check {
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 25.5%;
+  height: 81%;
+  padding: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 1;
+  position: absolute;
+  top: 1em;
+  right: 0.01em;
+  z-index: -1;
+}
+.menu_container .check i {
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  .menu_container .check {
+    height: 74%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu_container .check {
+    height: 82%;
   }
 }
 
@@ -449,8 +515,6 @@ header {
   padding: 0.5em;
   margin: 1em 0 0 0;
   box-shadow: 1px 5px 15px rgb(207, 206, 206);
-  z-index: 1;
-  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .menu_contents {
@@ -498,28 +562,11 @@ header {
   padding-right: 1em;
   margin: 0;
 }
-.menu_contents:focus {
+.menu_contents:hover {
   animation: pull_right 1s ease-in-out forwards;
 }
-.menu_contents:focus + .check i {
+.menu_contents:hover .check i {
   animation: rotate 1s ease-in-out 1s;
-}
-
-.check {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #99E2D0;
-  height: 68.2px;
-  padding: 20px;
-  border-radius: 15px;
-  opacity: 1;
-  position: relative;
-  bottom: 4.25em;
-  z-index: -1;
-}
-.check i {
-  color: white;
 }
 
 .command {

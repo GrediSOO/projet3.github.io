@@ -174,28 +174,7 @@
         right: 1em;
         z-index: 10;
         cursor: pointer;
-        &>.fa-regular.fa-heart{
-            font-size: x-large;
-            opacity: 1;
-        }
-        &>.fa-solid.fa-heart{
-            font-size: x-large;
-            color: pink;
-            transition: 0.5s;
-            background: -webkit-linear-gradient(0deg, $secondary, $primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-             opacity: 0;
-        }
-        &:focus>.fa-solid.fa-heart{
-             opacity: 1;
-        }
-        &:focus>.fa-regular.fa-heart{
-             opacity: 0;
-        }
-        & i {
-            position: absolute;
-        }
+        @include heart_animation;
     }
     &_location {
         font-weight: 400;

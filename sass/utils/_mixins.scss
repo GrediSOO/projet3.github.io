@@ -13,6 +13,31 @@
     }
 }
 
+@mixin heart_animation {
+    &>.fa-regular.fa-heart{
+        font-size: xx-large;
+        opacity: 1;
+    }
+    &>.fa-solid.fa-heart{
+        font-size: xx-large;
+        color: pink;
+        transition: 0.5s;
+        background: -webkit-linear-gradient(0deg, $secondary, $primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+         opacity: 0;
+    }
+    &:hover>.fa-solid.fa-heart{
+         opacity: 1;
+    }
+    &:hover>.fa-regular.fa-heart{
+         opacity: 0;
+    }
+    & i {
+        position: absolute;
+    }
+}
+
 @mixin menu_containers {
     padding: 0.8em;
     h2 {
@@ -30,8 +55,6 @@
     padding: 0.5em;
     margin: 1em 0 0 0;
     box-shadow: 1px 5px 15px rgb(207, 206, 206);
-    z-index: 1;
-    cursor: pointer;
     @include tablet {
         display: flex;
         flex-direction: row;
@@ -72,28 +95,37 @@
         padding-right: 1em;
         margin: 0;
     }
-    &:focus {
+    &:hover {
         animation: pull_right 1s ease-in-out forwards;
     }
-    &:focus + .check i {
+    &:hover  .check i {
         animation: rotate 1s ease-in-out 1s;
     }
 }
 
 @mixin check_circle {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     background-color: $tertiary;
-    height: 68.2px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 25.5%;
+    height: 81%;
     padding: 20px;
-    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     opacity: 1;
-    position: relative;
-    bottom: 4.25em;
+    position: absolute;
+    top: 1em;
+    right: 0.01em;
     z-index: -1;
     & i {
         color: $white;
+    }
+    @include tablet {
+        height: 74%;
+    }
+    @include desktop {
+        height: 82%;
     }
 }
 
