@@ -24,14 +24,14 @@
     &_heart {
         font-size: xx-large;
         position: absolute;
-        right: 1.2em;
+        right: 2em;
         top: 1em;
         @include heart_animation;
         @include tablet {
             right: 2em;
         }
         @include desktop {
-            right: 7em;
+            right: 13em;
         }
     }
 }
@@ -47,9 +47,6 @@
     position: relative;
     .check {
         @include check_circle;
-    }
-    &:hover {
-        transition: all transform translate(0)
     }
 }
 .entries {

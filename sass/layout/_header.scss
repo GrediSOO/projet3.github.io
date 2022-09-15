@@ -19,10 +19,9 @@ header {
         & a {
             color: black;
         }
-        &_return i {
-            @include tablet {
-                top: 10em;
-            }
+        @include tablet {
+            top: 1em;
+            font-size: 2em;
         }
     }
 }

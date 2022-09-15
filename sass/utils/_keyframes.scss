@@ -38,15 +38,3 @@
         rotate: 360deg;
     }    
 }
-
-@keyframes pull_left {
-    0% {
-        transform: translateX(0px);
-    }
-    50% {
-        transform: translateX(60px);
-    }
-    100% {
-        transform: translateX(0px)
-    }
-}

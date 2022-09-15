@@ -34,17 +34,6 @@
     rotate: 360deg;
   }
 }
-@keyframes pull_left {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(60px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
 * {
   box-sizing: border-box;
   font-family: "Roboto", "sans-serif";
@@ -139,8 +128,9 @@ header {
   color: black;
 }
 @media screen and (min-width: 768px) {
-  .logo_return_return i {
-    top: 10em;
+  .logo_return {
+    top: 1em;
+    font-size: 2em;
   }
 }
 
@@ -404,7 +394,7 @@ header {
 .card_heart {
   font-size: xx-large;
   position: absolute;
-  right: 1.2em;
+  right: 2em;
   top: 1em;
 }
 .card_heart > .fa-regular.fa-heart {
@@ -436,7 +426,7 @@ header {
 }
 @media screen and (min-width: 992px) {
   .card_heart {
-    right: 7em;
+    right: 13em;
   }
 }
 
@@ -458,6 +448,7 @@ header {
   justify-content: end;
   align-items: center;
   width: 60px;
+  height: 100%;
   padding: 20px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -471,19 +462,6 @@ header {
 }
 .menu_container .check:hover {
   animation: pull_left 1s ease-in-out 1s;
-}
-@media screen and (min-width: 768px) {
-  .menu_container .check {
-    height: 74%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .menu_container .check {
-    height: 82%;
-  }
-}
-.menu_container:hover {
-  transition: all transform translate(0);
 }
 
 .entries {
@@ -526,18 +504,8 @@ header {
   padding: 0.5em;
   margin: 1em 0 0 0;
   box-shadow: 1px 5px 15px rgb(207, 206, 206);
-}
-@media screen and (min-width: 768px) {
-  .menu_contents {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 992px) {
-  .menu_contents {
-    display: flex;
-    flex-direction: column;
-  }
+  overflow: hidden;
+  position: relative;
 }
 .menu_contents--tittle {
   font-size: 1.1em;
@@ -572,9 +540,32 @@ header {
   padding-left: 1em;
   padding-right: 1em;
   margin: 0;
+  transition: 1s;
+}
+.menu_contents:hover .menu_contents--price {
+  padding-right: 60px;
+}
+.menu_contents .check {
+  transform: translateX(60px);
+  transition: 1s;
+}
+.menu_contents:hover .check {
+  transform: translateX(0px);
 }
 .menu_contents:hover .check i {
-  animation: rotate 1s ease-in-out 1s;
+  animation: rotate 1s ease-in-out 0.15s;
+}
+@media screen and (min-width: 768px) {
+  .menu_contents {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu_contents {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .command {
