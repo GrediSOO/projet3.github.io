@@ -56,6 +56,7 @@
     margin: 1em 0 0 0;
     box-shadow: 1px 5px 15px rgb(207, 206, 206);
     overflow: hidden;
+    text-overflow: ellipsis;
     position: relative;
     &--tittle {
         font-size: 1.1em;
@@ -64,15 +65,11 @@
         width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
     }
     &--description {
         display: flex;
         justify-content: space-between;
         white-space: nowrap;
-        @include tablet {
-            justify-content: space-evenly;
-        }
     }
     &--subtittle {
         font-size: 1em;
@@ -102,10 +99,6 @@
     }
     &:hover .check i {
         animation: rotate 1s ease-in-out 0.15s;
-    }
-    @include tablet {
-        display: flex;
-        flex-direction: row;
     }
     @include desktop {
         display: flex;

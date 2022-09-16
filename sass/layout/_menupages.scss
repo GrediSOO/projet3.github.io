@@ -17,6 +17,9 @@
         margin: 0;
         font-family: $font-tittle;
         font-weight: 500;
+        @include tablet {
+            text-align: center;
+        }
         @include desktop {
             text-align: center;
         }
@@ -63,6 +66,9 @@
 }
 .menu_contents {
     @include menu_contents;
+    @include desktop {
+        width: 400px;
+    }
 }
 .command {
     display: flex;

@@ -378,6 +378,11 @@ header {
   font-family: "Shrikhand", "sans-serif";
   font-weight: 500;
 }
+@media screen and (min-width: 768px) {
+  .card_tittle {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 992px) {
   .card_tittle {
     text-align: center;
@@ -497,6 +502,7 @@ header {
   margin: 1em 0 0 0;
   box-shadow: 1px 5px 15px rgb(207, 206, 206);
   overflow: hidden;
+  text-overflow: ellipsis;
   position: relative;
 }
 .menu_contents--tittle {
@@ -506,17 +512,11 @@ header {
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .menu_contents--description {
   display: flex;
   justify-content: space-between;
   white-space: nowrap;
-}
-@media screen and (min-width: 768px) {
-  .menu_contents--description {
-    justify-content: space-evenly;
-  }
 }
 .menu_contents--subtittle {
   font-size: 1em;
@@ -547,16 +547,15 @@ header {
 .menu_contents:hover .check i {
   animation: rotate 1s ease-in-out 0.15s;
 }
-@media screen and (min-width: 768px) {
-  .menu_contents {
-    display: flex;
-    flex-direction: row;
-  }
-}
 @media screen and (min-width: 992px) {
   .menu_contents {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu_contents {
+    width: 400px;
   }
 }
 
