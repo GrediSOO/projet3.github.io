@@ -34,7 +34,7 @@
             right: 2em;
         }
         @include desktop {
-            right: 13em;
+            right: 10em;
         }
     }
 }
@@ -43,7 +43,8 @@
         display: flex;
         flex-direction: row;
         padding: 1em;
-        justify-content: center
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 .menu_container {
